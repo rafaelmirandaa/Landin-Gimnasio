@@ -1,0 +1,27 @@
+{
+  "name": "livefit",
+  "version": "1.0.0",
+  "description": "landingpage del gimnasio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelmirandaa/Landin-Gimnasio.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Rafael Miranda A. rafael.miranda.almendaris@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelmirandaa/Landin-Gimnasio/issues"
+  },
+  "homepage": "https://github.com/rafaelmirandaa/Landin-Gimnasio#readme",
+  "dependencies": {
+    "sass": "^1.90.0"
+  }
+}
