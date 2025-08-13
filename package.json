@@ -2,9 +2,13 @@
   "name": "livefit",
   "version": "1.0.0",
   "description": "landingpage del gimnasio",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev",
+    "hola": "gulp hola"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,9 @@
     "url": "https://github.com/rafaelmirandaa/Landin-Gimnasio/issues"
   },
   "homepage": "https://github.com/rafaelmirandaa/Landin-Gimnasio#readme",
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.90.0"
   }
 }
