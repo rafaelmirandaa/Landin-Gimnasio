@@ -1,8 +1,8 @@
-@use '/src/scss/base/variable' as v;
-@use '/src/scss/base/globales';
-@use '/src/scss/base/mixin' as m;
+@use '../base/variable' as v;
+@use '../base/mixin' as m;
 
 .header{
+        background-color: v.$azul_principal;
         .contenido-header{
             display: flex;
             align-items: center;
@@ -30,7 +30,7 @@
             display: flex;
             gap: 3rem;
             a{
-                color: v.$negro;
+                color: v.$blanco;
                 text-decoration: none;
                 font-size: 1.6rem;
                 white-space: nowrap; //no haya salto de linea
@@ -39,7 +39,7 @@
                     color: v.$amarillo;
                     background-color: v.$negro;
                     border-radius: 10%;
-                    padding: 0.3rem 0.6rem;
+
                 }
             }
 }
