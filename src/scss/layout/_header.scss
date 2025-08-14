@@ -7,14 +7,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 2rem 4rem;
+            padding:0 3rem;
             height: auto;
             width: 100%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);//efecto sombra
          }
         .logo{
-            width: 5rem;
-            height: 5rem;
+            width: 10rem;
+            height: 10rem;
             position: relative;
             overflow: hidden;
             margin-left: 0;
@@ -28,7 +28,7 @@
 }
 .navegacion-principal{
             display: flex;
-            gap: 3rem;
+            gap: 5rem;
             a{
                 color: v.$blanco;
                 text-decoration: none;
