@@ -373,6 +373,7 @@ body > section {
 
 .header {
   background-color: #0E1D28;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 .header .contenido-header {
   display: flex;
@@ -381,7 +382,6 @@ body > section {
   padding: 0 3rem;
   height: auto;
   width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 .header .logo {
   width: 10rem;
@@ -440,27 +440,46 @@ section {
 }
 
 .gym-sucursal {
-  display: flex;
-  align-items: flex-start;
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.875rem;
 }
 .gym-sucursal .contenido-sucursal {
-  text-align: left; /* alinea el texto a la izquierda */
+  display: flex;
+  max-height: 5.5rem;
+  justify-content: space-between;
+  padding-left: 20rem;
+  padding-right: 55rem;
 }
 .gym-sucursal .contenido-sucursal h2 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  margin-left: 1.5rem;
-  margin-bottom: 0;
+  font-size: 1.5rem;
 }
-.gym-sucursal .contenido-sucursal p {
-  margin-left: 2rem;
-  margin-top: 0;
-  font-weight: 200;
-  position: relative;
+.gym-sucursal .contenido-sucursal h2 span {
+  font-size: 2rem;
+}
+
+.gym-card-descripcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  background-color: #D8AE0E;
+  max-width: 95%;
+  max-height: 40rem;
+  padding: 1rem;
+}
+
+.gym-imagen {
+  flex: 1;
 }
 
 .gym-card img {
-  max-width: 900px;
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
+  height: auto;
+}
+
+.horario {
+  flex: 1;
+  background-color: #D8AE0E;
 }

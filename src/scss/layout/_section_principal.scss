@@ -31,33 +31,49 @@ section{
 }
 
 .gym-sucursal{
-    display: flex;
-    align-items: flex-start;
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.875rem;
 
     .contenido-sucursal{
-    text-align: left; /* alinea el texto a la izquierda */
-
+        display: flex;
+        max-height: 5.5rem;
+        justify-content: space-between;
+        padding-left:20rem;
+        padding-right:55rem;
         h2{
-            font-weight:500;
-            font-size: 2.5rem;
-            margin-left: 1.5rem;
-            margin-bottom: 0;
+            font-size: 1.5rem;
         }
-        p{
-            margin-left: 2rem;
-            margin-top: 0;
-            font-weight: 200;
-            position: relative;
+        h2 span{
+            font-size: 2rem;
         }
     }
+}
+
+.gym-card-descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    background-color: v.$amarillo;
+    max-width:95%;
+    max-height: 40rem;
+    padding: 1rem;
 
 }
 
-
+.gym-imagen{
+    flex: 1;
+}
 
 
 .gym-card img {
-    max-width: 900px;
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
+    height: auto;
+}
+
+.horario{
+   flex: 1;
+   background-color: v.$amarillo;
 }

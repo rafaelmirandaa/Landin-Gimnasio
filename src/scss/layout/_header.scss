@@ -3,6 +3,9 @@
 
 .header{
         background-color: v.$azul_principal;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+
+
         .contenido-header{
             display: flex;
             align-items: center;
@@ -10,8 +13,7 @@
             padding:0 3rem;
             height: auto;
             width: 100%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);//efecto sombra
-         }
+        }
         .logo{
             width: 10rem;
             height: 10rem;
@@ -26,6 +28,7 @@
             object-fit: contain
         }
 }
+
 .navegacion-principal{
             display: flex;
             gap: 5rem;
