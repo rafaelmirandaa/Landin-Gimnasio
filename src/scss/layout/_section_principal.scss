@@ -4,42 +4,42 @@
 section{
     display: flex;
     flex-direction: column; /* uno encima del otro */
-    align-items: center;    /* centrar horizontalmente */
-    text-align: center;     /* centrar texto */
-    gap: 1rem; 
+    align-items: center; 
+    text-align: center;
+    margin-top: 0rem;
 }
 
-.contenido-gym{
-    text-align: center;  
-    margin-top: 2.5rem;
+.contenido-gym {
+  margin-top: 0rem;
+  transition: all 0.5s ease; 
 
-       .slogan{
-        margin-top:1rem;
-        font-style: italic;
-        color: gray;
-        }
+  h1 {
+    font-size: 2.5rem;
+    transition: font-size 0.5s ease; 
+  }
 
-        .p{
-        margin-top:1.5rem;
-        color:v.$azul_principal;
-        }
-}
-
-.contenido-gym h1{
-    font-size: 4rem;
-    margin: 0;
-    color:v.$amarillo ;
+  .contenido_frase {
+    display: none;
+    transition: all 0.5s ease;
+  }
 }
 
 @include m.desktop{
-    .contenido-gym h1{
-        font-size: 7rem;
-        color: v.$azul_principal;
+    .contenido-gym{
+        margin-top:12rem;
+    
+        h1{
+            font-size: 8rem;
+            margin: 0;
+            color:v.$azul_principal;
+        }
+        .contenido_frase {
+            display: block;
+            font-size: 2rem;
+            line-height: 1.4;
+        }
     }
-}
-
-
-
+}    
 
 
 .gym-sucursal{
@@ -50,7 +50,6 @@ section{
 .contenido-sucursal{
     display: flex;
     align-content: space-between;
-    background-color: v.$amarillo;
     height: 8.5rem;
     width:100%;;
 }
@@ -61,7 +60,7 @@ section{
 
 @include m.telefono{
     .titulo-sucursal{
-        padding-left: 0;
+        padding-left: 4rem;
     }
 }
 @include m.desktop{
@@ -76,7 +75,7 @@ section{
     right: 5.5rem;
 }
 
- h2{
+h2{
     font-size: 3.5rem;
 }
  h2 span{
