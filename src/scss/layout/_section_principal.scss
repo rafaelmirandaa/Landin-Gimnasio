@@ -81,29 +81,35 @@ h2{
  h2 span{
     font-size: 2rem;
 }
-
-
-
 .gym-card-descripcion{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width:100%;
-  margin: 0;
-  height: 55rem;
-  background-color: v.$azul_principal;
+  gap: 2rem;
+  width:70%;
+  margin: 0 auto;
+  height: 50rem;
+  background-color: v.$blanco;
 }
-
-.gym-card img {
-    display: flex;
-    max-width: 100%;
+.gym-imagen {
+    width: 70%;
+    height: 100%;
     border-radius: 10px;
-    height: auto;
+    background-color: v.$azul_principal;
 }
-
-.horario{
-    display: flex;
+.gym-imagen img{
+    width: 100%;
+    height: 100%;
+}
+.gym-horario-direccion{
+   display: flex;
+   flex-direction:column;
    background-color: v.$amarillo;
-   width: 3rem;
-   height: 4rem;
+   width: 25%;
+   height: 100%;
+}
+.card{
+    border: 1px solid v.$negro;
+    margin: 1rem;
+    background-color: v.$blanco;
 }
