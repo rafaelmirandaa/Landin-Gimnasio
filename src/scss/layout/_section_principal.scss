@@ -8,7 +8,6 @@ section{
     text-align: center;
     margin-top: 0rem;
 }
-
 .contenido-gym {
   margin-top: 0rem;
   transition: all 0.5s ease; 
@@ -23,7 +22,6 @@ section{
     transition: all 0.5s ease;
   }
 }
-
 @include m.desktop{
     .contenido-gym{
         margin-top:12rem;
@@ -40,24 +38,19 @@ section{
         }
     }
 }    
-
-
 .gym-sucursal{
     margin-top: 3rem;
     /*background-color: v.$amarillo;*/
 }
-
 .contenido-sucursal{
     display: flex;
     align-content: space-between;
     height: 8.5rem;
     width:100%;;
 }
-
 .titulo-sucursal{
     padding-left: 0;
 }
-
 @include m.telefono{
     .titulo-sucursal{
         padding-left: 4rem;
@@ -68,13 +61,11 @@ section{
         padding-left: 20rem;
     }
 }
-
 .titulo-sucursal span{
     display: block;
     position: relative;
     right: 5.5rem;
 }
-
 h2{
     font-size: 3.5rem;
 }
@@ -110,6 +101,6 @@ h2{
 }
 .card{
     border: 1px solid v.$negro;
-    margin: 1rem;
+    margin: 0rem;
     background-color: v.$blanco;
 }
