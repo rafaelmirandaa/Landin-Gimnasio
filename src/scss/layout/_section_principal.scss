@@ -64,7 +64,7 @@ section{
 .titulo-sucursal span{
     display: block;
     position: relative;
-    right: 5.5rem;
+    right: 5.3rem;
 }
 h2{
     font-size: 3.5rem;
@@ -72,35 +72,218 @@ h2{
  h2 span{
     font-size: 2rem;
 }
+
 .gym-card-descripcion{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-  width:70%;
-  margin: 0 auto;
-  height: 50rem;
-  background-color: v.$blanco;
-}
-.gym-imagen {
-    width: 70%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: v.$azul_principal;
-}
-.gym-imagen img{
-    width: 100%;
-    height: 100%;
-}
-.gym-horario-direccion{
-   display: flex;
-   flex-direction:column;
-   background-color: v.$amarillo;
-   width: 25%;
-   height: 100%;
-}
-.card{
-    border: 1px solid v.$negro;
-    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width:100%;
+    margin: 0 auto;
+    height: 50rem;
     background-color: v.$blanco;
+
+    .gym-imagen {
+        width: 90%;
+        height: 90%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+    .gym-horario-direccion{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 35%;
+        gap: 5rem;
+        height: 100%;
+    }
+    .card{
+        background-color: v.$blanco;
+        display: flex;
+        align-content: space-between;
+        text-align: left;
+        width: 100%;
+        height: 29%;
+        border: 0.1rem solid v.$amarillo;
+        border-radius: 1.5rem;
+        
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 6rem;
+                height: 5rem;
+                font-size: 2rem;
+            }
+            i{
+                font-size: 3rem;
+                color: v.$amarillo;
+            }
+
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            .mostrar-horario {
+                height: 5rem;
+                        
+                h2{
+                    font-family: v.$fuente_principal;
+                    font-size:2rem;
+                    font-weight: bold;
+                    color: v.$negro;
+                    margin: 1rem 0 0 1rem;
+                }
+                            
+            }
+    }
+    .mostrar-dias-semana,
+    .mostrar-dias-fds,
+    .horario-asistencia {
+        display: flex;
+        justify-content: space-between; /* días a la izquierda, hora a la derecha */
+        align-items: center;            /* alinear verticalmente */
+        margin: 0.5rem 1rem;            /* espaciado interno opcional */
+    }
+
+    .mostrar-dias-semana p,
+    .mostrar-dias-fds p,
+    .mostrar-direccion p,
+    .horario-asistencia p,
+    .mostrar-dias-fds-direccion p{
+        font-size:1.3rem;
+        font-weight: normal;
+    }
+
+    .horario-asistencia p{
+        text-decoration: underline;
+    }
+
+    .button{
+        background-color: v.$amarillo;   /* color de fondo */
+        color: v.$negro;   
+        width: 80%;
+        height: 5rem;             /* color del texto */
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 1.5rem;           /* esquinas redondeadas */
+        padding: 1rem 2rem;              /* espacio interno */
+        cursor: pointer;                 /* manito al pasar */
+        transition: background 0.3s ease; 
+    }  
+            
+
+}
+
+
+@include m.desktop{
+    .gym-card-descripcion{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        width:70%;
+        margin: 0 auto;
+        height: 50rem;
+    
+            .gym-imagen {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-color: v.$azul_principal;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }    
+            .gym-horario-direccion{
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                width: 35%;
+                gap: 5rem;
+                height: 100%;
+            }
+            .card{
+                background-color: v.$blanco;
+                display: flex;
+                align-content: space-between;
+                text-align: left;
+                width: 100%;
+                height: 29%;
+                border: 0.1rem solid v.$amarillo;
+                border-radius: 1.5rem;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 6rem;
+                        height: 5rem;
+                        font-size: 2rem;
+                    }
+                    i{
+                        font-size: 3rem;
+                        color: v.$amarillo;
+                    }
+
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .mostrar-horario {
+                        height: 5rem;
+                        
+                        h2{
+                            font-family: v.$fuente_principal;
+                            font-size:2rem;
+                            font-weight: bold;
+                            color: v.$negro;
+                            margin: 1rem 0 0 1rem;
+                        }
+                            
+                    }
+            }
+
+            .mostrar-dias-semana,
+            .mostrar-dias-fds,
+            .horario-asistencia {
+            display: flex;
+            justify-content: space-between; /* días a la izquierda, hora a la derecha */
+            align-items: center;            /* alinear verticalmente */
+            margin: 0.5rem 1rem;            /* espaciado interno opcional */
+            }
+
+            .mostrar-dias-semana p,
+            .mostrar-dias-fds p,
+            .mostrar-direccion p,
+            .horario-asistencia p,
+            .mostrar-dias-fds-direccion p{
+            font-size:1.3rem;
+            font-weight: normal;
+            }
+
+            .horario-asistencia p{
+            text-decoration: underline;
+            }
+
+            .button{
+            background-color: v.$amarillo;   /* color de fondo */
+            color: v.$negro;   
+            width: 80%;
+            height: 5rem;             /* color del texto */
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 1.5rem;           /* esquinas redondeadas */
+            padding: 1rem 2rem;              /* espacio interno */
+            cursor: pointer;                 /* manito al pasar */
+            transition: background 0.3s ease; 
+            }  
+    }
 }
